@@ -1,11 +1,14 @@
-import random
+import requests
 
 def get_weather():
-    weather_list = [
-        "Sunny, 30°C",
-        "Cloudy, 28°C",
-        "Rainy, 25°C",
-        "Windy, 27°C"
-    ]
+    try:
+        url = "https://wttr.in/?format=3"
+        response = requests.get(url)
 
-    return random.choice(weather_list)
+        if response.status_code == 200:
+            return response.text
+
+        return "Weather unavailable"
+
+    except Exception:
+        return "Weather unavailable"

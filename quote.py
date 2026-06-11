@@ -1,11 +1,15 @@
-import random
+import requests
 
 def get_quote():
-    quotes = [
-        "Success is the sum of small efforts repeated daily.",
-        "Stay hungry, stay foolish.",
-        "Dream big and dare to fail.",
-        "Every day is a new beginning."
-    ]
+    try:
+        url = "https://api.quotable.io/random"
+        response = requests.get(url)
 
-    return random.choice(quotes)
+        if response.status_code == 200:
+            data = response.json()
+            return f'"{data["content"]}" — {data["author"]}'
+
+        return "Stay consistent and keep learning."
+
+    except Exception:
+        return "Stay consistent and keep learning."
