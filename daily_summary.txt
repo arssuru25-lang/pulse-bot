@@ -8,6 +8,6 @@ WEATHER
 Windy, 27°C
 
 TODAY'S QUOTE
-Success is the sum of small efforts repeated daily.
+Stay hungry, stay foolish.
 
 =========================
