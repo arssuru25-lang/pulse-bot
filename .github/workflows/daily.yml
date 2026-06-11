@@ -1,11 +1,13 @@
 name: Daily Pulse
 
 on:
-  push:
+  schedule:
+    - cron: '0 6 * * *'
   workflow_dispatch:
+  push:
 
 jobs:
-  run-pulse:
+  pulse:
     runs-on: ubuntu-latest
 
     steps:
