@@ -1,7 +1,10 @@
 name: Update Projects
 
 on:
-  push:
+  push
+
+permissions:
+  contents: write
 
 jobs:
   update:
