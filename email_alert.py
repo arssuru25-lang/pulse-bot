@@ -8,7 +8,7 @@ def send_alert(subject, body):
 
     password = "qarhyvvjjcmubten"
 
-    msg = MIMEText(body)
+    msg = MIMEText(body, "html")
 
     msg["Subject"] = subject
     msg["From"] = sender
