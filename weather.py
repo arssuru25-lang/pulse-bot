@@ -1,4 +1,5 @@
 import requests
+from email_alert import send_alert
 
 def get_weather():
     try:
@@ -6,9 +7,22 @@ def get_weather():
         response = requests.get(url)
 
         if response.status_code == 200:
-            return response.text
+            weather = response.text
+            print(weather)
+
+            send_alert(
+                "Weather Update",
+                f"Current weather: {weather}"
+            )
+
+            print("Email alert sent.")
+            return weather
 
         return "Weather unavailable"
 
-    except Exception:
+    except Exception as e:
+        print("Error:", e)
         return "Weather unavailable"
+
+
+get_weather()
