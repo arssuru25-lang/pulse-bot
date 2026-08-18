@@ -3,5 +3,25 @@
         "name": "pulse-bot",
         "description": null,
         "url": "https://github.com/arssuru25-lang/pulse-bot"
+    },
+    {
+        "name": "tide-app",
+        "description": null,
+        "url": "https://github.com/arssuru25-lang/tide-app"
+    },
+    {
+        "name": "tide-pro",
+        "description": null,
+        "url": "https://github.com/arssuru25-lang/tide-pro"
+    },
+    {
+        "name": "tide-pro-v1",
+        "description": null,
+        "url": "https://github.com/arssuru25-lang/tide-pro-v1"
+    },
+    {
+        "name": "tide_pro_version1.flutter",
+        "description": "An upgraded premium to-do list app with edit ,delete task functions with features like category chips,search bar,dashboard cards,dark mode,splash screen,real time calendar,settings,analytics and much more",
+        "url": "https://github.com/arssuru25-lang/tide_pro_version1.flutter"
     }
 ]
