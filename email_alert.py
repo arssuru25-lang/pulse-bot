@@ -3,8 +3,8 @@ from email.mime.text import MIMEText
 
 def send_alert(subject, body):
 
-    sender = "ars.suru786@gmail.com"
-    receiver = "ars.suru786@gmail.com"
+    sender = "arsxxx6@gmail.com"
+    receiver = "arsxxx@gmail.com"
 
     password = "qarhyvvjjcmubten"
 
